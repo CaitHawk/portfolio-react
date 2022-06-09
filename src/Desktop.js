@@ -3,11 +3,12 @@ import { HomeDesktop } from './pages/Home';
 import { AboutDesktop } from './pages/About';
 import { ContactDesktop } from './pages/Contact';
 import Footer from './pages/Footer';
+import './styles/App.css';
 
 
 export default function Desktop () {
     return (
-        <main>
+        <main className="desktop">
             <HeaderFull />
             <HomeDesktop />
             <AboutDesktop />

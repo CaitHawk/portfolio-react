@@ -1,14 +1,12 @@
-
-import './styles/App.css';
 import Desktop from './Desktop'
 import Mobile from './Mobile';
+import './styles/App.css';
 
 function App() {
   return (
     <div className="App">
-      <Mobile className="mobile" />
-      {/* <Desktop className="desktop" />       */}
-      <Desktop className="desktop" />
+      <Mobile />
+      <Desktop />
     </div>
   );
 }

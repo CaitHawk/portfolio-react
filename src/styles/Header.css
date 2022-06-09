@@ -1,0 +1,31 @@
+.headerCollapsed {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.headerCollapsedBtnOpen {
+    height: 70%;
+    margin-right: 15px;
+    background-color: red;
+    border: white solid 2px;
+    border-radius: 5px;
+    color: white;
+}
+.headerCollapsedBtnOpen:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+.headerCollapsedShowNav {
+    position: absolute;
+    background-color: yellow;
+    z-index: 99;
+    right: 0;
+}
+
+.headerCollapsedHideNav {
+    display: none;
+}
