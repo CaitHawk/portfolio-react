@@ -1,3 +1,4 @@
+import { Component } from 'react';
 import "../styles/Header.css";
 
 //header full
@@ -22,14 +23,24 @@ const closeNav = (id) => {
     return;
 }
 
+// class HeaderCollapsed extends Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             isOpen: false;
+//         };
+//         this.bind(closeNav)
+//     }
+// }
+
 function HeaderCollapsed() {
     return (
         <div className="headerCollapsed">
             <p className="headerCollapsedLogo">Logo</p>
             <button className="headerCollapsedBtnOpen">Click</button>
-            <nav className="headerCollapsedShowNav">
+            <nav className="headerCollapsedShowNav" id="headerCollapsedNav">
                 <div className="headerCollapsedNavHeader">
-                    <button className="headerCollapsedBtnClose">Close</button>
+                    <button className="headerCollapsedBtnClose" onClick={() => closeNav("headerCollapsedNav")}>Close</button>
                 </div>
                 <a className="headerCollapsedNavLink">Home</a>
                 <a className="headerCollapsedNavLink">About</a>

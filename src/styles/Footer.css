@@ -1,0 +1,62 @@
+.footerMain {
+    background-color: rgb(10, 10, 10);
+    font-family: 'Nunito', sans-serif;
+    padding-top: 20px;
+}
+
+.footerContactLinks,
+.footerSocialLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+.footerSocialLinks {
+    align-items: flex-start;
+}
+
+.footerLink {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 4px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgb(112, 156, 141);
+}
+
+
+
+/*small screens */
+@media screen and (max-width: 767px) {
+    .footerMain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerIcon {
+        color: rgb(112, 156, 141);
+        font-size: 40px;
+    }
+}
+
+
+/* medium and large screens */
+@media screen and (min-width: 768px) {
+    .footerMain {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        height: 10em;
+    }
+    .footerIcon { 
+        display: none;
+    }
+}
