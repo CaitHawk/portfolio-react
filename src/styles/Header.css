@@ -19,13 +19,13 @@
     opacity: .75;
 }
 
-.headerCollapsedShowNav {
+.headerCollapsedShow {
     position: absolute;
     background-color: yellow;
     z-index: 99;
     right: 0;
 }
 
-.headerCollapsedHideNav {
+.headerCollapsedHide {
     display: none;
 }

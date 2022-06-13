@@ -2,32 +2,25 @@ import '../styles/Projects.css';
 
 const projectsData = [
     {
-        title: "project 1",
+        title: "Graf Law",
         description: "project 1 description",
         image: "project 1",
         link: "project 1 link",
         key: "001"
     },
     {
-        title: "project 2",
+        title: "Jack of All Fades",
         description: "project 2 description",
         image: "project 2",
         link: "project 2 link",
         key: "002"
     },
-    {
-        title: "project 1",
-        description: "project 1 description",
-        image: "project 1",
-        link: "project 1 link",
-        key: "003"
-    },
 ]
 
 function ProjectsDesktop () {
     return (
-        <main>
-            <h1>Projects Desktop</h1>
+        <main className="projectsDesktopMain">
+            <h1 className="projectsDesktopTitle">Projects Desktop</h1>
             <ul className="projectsDesktopUl">
                 { projectsData.map( (project) => (
                     <li key={ project.key } className="projectsDesktopLi">

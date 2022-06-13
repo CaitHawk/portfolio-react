@@ -1,0 +1,40 @@
+.projectsDesktopMain {
+    height: 100vh;
+}
+
+.projectsMobileUl, .projectsDesktopUl {
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+}
+
+.projectsDesktopUl {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectsDesktopLi {
+    border: solid 2px red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: auto;
+}
+
+.projectsDesktopLiH3 {
+    font-size: 40px;
+}
+
+.projectsDesktopAnchor, .projectsMobileAnchor {
+    color: white;
+    text-decoration: none;
+    border: solid 2px white;
+    border-radius: 5px;
+    padding: 8px 18px;
+    font-size: 20px;
+    background-color: black;
+    text-align: center;
+    width: auto;
+    margin: 5%;
+}
