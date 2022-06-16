@@ -2,6 +2,21 @@
     background-color: rgb(10, 10, 10);
     font-family: 'Nunito', sans-serif;
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footerTop {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.footerBottom {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .footerContactLinks,
@@ -34,7 +49,7 @@ a:hover {
 
 /*small screens */
 @media screen and (max-width: 767px) {
-    .footerMain {
+    .footerTop {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -49,7 +64,7 @@ a:hover {
 
 /* medium and large screens */
 @media screen and (min-width: 768px) {
-    .footerMain {
+    .footerTop {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;

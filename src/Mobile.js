@@ -1,15 +1,15 @@
-import { HeaderCollapsed } from './pages/Header';
-import { HomeMobile } from './pages/Home';
-import { AboutMobile } from './pages/About';
-import { ProjectsMobile } from './pages/Projects';
-import { ContactMobile } from './pages/Contact';
-import Footer from './pages/Footer';
+import { HeaderCollapsed } from './components/Header';
+import { HomeMobile } from './components/Home';
+import { AboutMobile } from './components/About';
+import { ProjectsMobile } from './components/Projects';
+import { ContactMobile } from './components/Contact';
+import Footer from './components/Footer';
 import './styles/App.css';
 
 export default function Mobile () {
     return (
         <main className="mobile">
-            <HeaderCollapsed />
+            {/* <HeaderCollapsed /> */}
             <HomeMobile />
             <AboutMobile />
             <ProjectsMobile />

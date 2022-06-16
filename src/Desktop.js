@@ -1,9 +1,10 @@
-import { HeaderFull } from './pages/Header';
-import { HomeDesktop } from './pages/Home';
-import { AboutDesktop } from './pages/About';
-import { ProjectsDesktop } from './pages/Projects';
-import { ContactDesktop } from './pages/Contact';
-import Footer from './pages/Footer';
+import { HeaderFull } from './components/Header';
+import { HomeDesktop } from './components/Home';
+import { SkillsDesktop } from './components/Skills';
+import { ProjectsDesktop } from './components/Projects';
+import { AboutDesktop } from './components/About';
+import { ContactDesktop } from './components/Contact';
+import Footer from './components/Footer';
 import './styles/App.css';
 
 
@@ -12,8 +13,9 @@ export default function Desktop () {
         <main className="desktop">
             <HeaderFull />
             <HomeDesktop />
-            <AboutDesktop />
+            <SkillsDesktop />
             <ProjectsDesktop />
+            <AboutDesktop />
             <ContactDesktop />
             <Footer />
         </main>

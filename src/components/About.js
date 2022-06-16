@@ -35,16 +35,16 @@ function SkillsIcons () {
 
 function AboutDesktop () {
     return (
-        <main>
+        <section className="aboutDesktopMain" id="aboutDesktop">
             <h1>About Desktop</h1>
             <SkillsIcons />
-        </main>
+        </section>
     );
 }
 
 function AboutMobile () {
     return (
-        <main>
+        <main className="aboutMobileMain" id="aboutMobile">
             <SkillsIcons />
             <h1>About Mobile</h1>
         </main>

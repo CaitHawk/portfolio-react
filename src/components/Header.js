@@ -1,11 +1,18 @@
 import { Component } from 'react';
+import { Link } from 'react-router-dom';
 import "../styles/Header.css";
 
 //header full
 
 function HeaderFull() {
     return (
-        <h1>Header full</h1>
+        <nav className="headerFullNav">
+            <a href="#homeDesktop">Home</a>
+            <a href="#skillsDesktop">Skills</a>
+            <a href="#projectsDesktop">Projects</a>
+            <a href="#aboutDesktop">About</a>
+            <a href="#contactDesktop">Contact</a>
+        </nav>
     );
 }
 
@@ -37,7 +44,7 @@ class HeaderCollapsed extends Component {
             return {
                 isOpen: !st.isOpen
             }
-        })           
+        })
     }
 
     handleClick(e) {
@@ -53,7 +60,7 @@ class HeaderCollapsed extends Component {
                     Click
                 </button>
                 <nav
-                    className={ this.state.isOpen ? "headerCollapsedShow" : 'headerCollapsedHide'}
+                    className={this.state.isOpen ? "headerCollapsedShow" : 'headerCollapsedHide'}
                 >
                     <div className="headerCollapsedNavHeader">
                         <button

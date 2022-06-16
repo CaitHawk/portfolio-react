@@ -2,17 +2,17 @@ import '../styles/Home.css';
 
 function HomeDesktop () {
     return (
-        <main>
+        <section className="homeDesktopMain" id="homeDesktop">
             <h1>Home Desktop</h1>
-        </main>
+        </section>
     );
 }
 
 function HomeMobile () {
     return (
-        <main>
+        <section className="homeMobileMain" id="homeMobile">
             <h1>Home Mobile</h1>
-        </main>
+        </section>
     );
 }
 
