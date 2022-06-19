@@ -1,98 +1,47 @@
-import { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons';
 import "../styles/Header.css";
 
 //header full
 
 function HeaderFull() {
     return (
-        <nav className="headerFullNav">
-            <a href="#homeDesktop">Home</a>
-            <a href="#skillsDesktop">Skills</a>
-            <a href="#projectsDesktop">Projects</a>
-            <a href="#aboutDesktop">About</a>
-            <a href="#contactDesktop">Contact</a>
-        </nav>
+        <div className="headerFullDiv">
+            <div className="headerFullLogoDiv">
+                <FontAwesomeIcon icon={faUserAstronaut} className="headerFullLogo" />
+            </div>
+            <nav className="headerFullNav">
+                <a href="#skillsDesktop">SKILLS</a>
+                <a href="#projectsDesktop">PROJECTS</a>
+                <a href="#aboutDesktop">ABOUT</a>
+                <a href="#contactDesktop">CONTACT</a>
+            </nav>
+        </div>
     );
 }
 
 
 //header collapsed
 
-// const openNav = (id) => {
-//     document.getElementById(id).classList.add("headerCollapsedShow")
-//     document.getElementById(id).classList.remove("headerCollapsedHide")
-//     return;
-// }
-// const closeNav = (id) => {
-//     document.getElementById(id).classList.add("headerCollapsedHide")
-//     document.getElementById(id).classList.remove("headerCollapsedShow")
-//     return;
-// }
-
-class HeaderCollapsed extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isOpen: true
-        };
-        this.handleClick = this.handleClick.bind(this);
-        this.toggleState = this.toggleState.bind(this);
-    }
-    toggleState() {
-        this.setState(st => {
-            return {
-                isOpen: !st.isOpen
-            }
-        })
-    }
-
-    handleClick(e) {
-        this.toggleState();
-    }
-    render() {
-        return (
-            <div className="headerCollapsed" >
-                <p className="headerCollapsedLogo">Logo</p>
-                <button
-                    className="headerCollapsedBtnOpen"
-                    onClick={this.handleClick}>
-                    Click
-                </button>
-                <nav
-                    className={this.state.isOpen ? "headerCollapsedShow" : 'headerCollapsedHide'}
-                >
-                    <div className="headerCollapsedNavHeader">
-                        <button
-                            className="headerCollapsedBtnClose"
-                            onClick={this.handleClick}>
-                            Close
-                        </button>
-                    </div>
-                    <a className="headerCollapsedNavLink">Home</a>
-                    <a className="headerCollapsedNavLink">About</a>
-                    <a className="headerCollapsedNavLink">Contact</a>
-                </nav>
-            </div>
-        )
-    }
+function HeaderCollapsed() {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => setIsOpen(!isOpen);
+    return (
+        <div className="headerCollapsedDiv">
+            <FontAwesomeIcon icon={faUserAstronaut} className="headerCollapsedLogo" />
+            <nav className={isOpen ? 'headerCollapsedShow' : 'headerCollapsedHide'}>
+                <a href="#skillsMobile" onClick={toggleMenu}>SKILLS</a>
+                <a href="#projectsMobile" onClick={toggleMenu}>PROJECTS</a>
+                <a href="#aboutMobile" onClick={toggleMenu}>ABOUT</a>
+                <a href="#contactMobile" onClick={toggleMenu}>CONTACT</a>
+            </nav>
+            <button onClick={toggleMenu} className="headerCollapsedBtnOpen">
+                <FontAwesomeIcon icon={faBars} />
+            </button>
+        </div>
+    )
 }
-
-// function HeaderCollapsed() {
-//     return (
-//         <div className="headerCollapsed">
-//             <p className="headerCollapsedLogo">Logo</p>
-//             <button className="headerCollapsedBtnOpen">Click</button>
-//             <nav className="headerCollapsedShowNav" id="headerCollapsedNav">
-//                 <div className="headerCollapsedNavHeader">
-//                     <button className="headerCollapsedBtnClose" onClick={() => closeNav("headerCollapsedNav")}>Close</button>
-//                 </div>
-//                 <a className="headerCollapsedNavLink">Home</a>
-//                 <a className="headerCollapsedNavLink">About</a>
-//                 <a className="headerCollapsedNavLink">Contact</a>
-//             </nav>
-//         </div>
-//     );
-// }
 
 export { HeaderFull, HeaderCollapsed };

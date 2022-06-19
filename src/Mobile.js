@@ -9,7 +9,7 @@ import './styles/App.css';
 export default function Mobile () {
     return (
         <main className="mobile">
-            {/* <HeaderCollapsed /> */}
+            <HeaderCollapsed />
             <HomeMobile />
             <AboutMobile />
             <ProjectsMobile />
