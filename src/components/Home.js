@@ -1,19 +1,23 @@
 import '../styles/Home.css';
 
-function HomeDesktop () {
+function Home() {
     return (
-        <section className="homeDesktopMain" id="homeDesktop">
-            <h1>Home Desktop</h1>
+        <section className="homeMain" id="homeDesktop">
+            <div className="homeWrapper">
+                <div className="homeTitleDiv">
+                    <p className="homeTitle">Caitlin</p>
+                    <p className="homeTitle">Neathawk</p>
+                    <p className="homeInfo">She/Her | Engineer | Developer</p>
+                </div>
+                <div className="homeDescriptionDiv">
+                    <p className="homeDescription">Hello!</p>
+                    <p className="homeDescription">Together we can build tools for the future.</p>
+                    <p className="homeDescription">Tools that will change the world. Join Me.</p>
+                </div>
+            </div>
         </section>
     );
 }
 
-function HomeMobile () {
-    return (
-        <section className="homeMobileMain" id="homeMobile">
-            <h1>Home Mobile</h1>
-        </section>
-    );
-}
 
-export { HomeDesktop, HomeMobile };
+export default Home;

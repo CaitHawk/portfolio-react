@@ -1,5 +1,5 @@
 import { HeaderFull } from './components/Header';
-import { HomeDesktop } from './components/Home';
+import Home from './components/Home';
 import { SkillsDesktop } from './components/Skills';
 import { ProjectsDesktop } from './components/Projects';
 import { AboutDesktop } from './components/About';
@@ -12,7 +12,7 @@ export default function Desktop () {
     return (
         <main className="desktop">
             <HeaderFull />
-            <HomeDesktop />
+            <Home />
             <SkillsDesktop />
             <ProjectsDesktop />
             <AboutDesktop />

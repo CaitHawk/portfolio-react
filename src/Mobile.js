@@ -1,5 +1,5 @@
 import { HeaderCollapsed } from './components/Header';
-import { HomeMobile } from './components/Home';
+import Home from './components/Home';
 import { AboutMobile } from './components/About';
 import { ProjectsMobile } from './components/Projects';
 import { ContactMobile } from './components/Contact';
@@ -10,7 +10,7 @@ export default function Mobile () {
     return (
         <main className="mobile">
             <HeaderCollapsed />
-            <HomeMobile />
+            <Home />
             <AboutMobile />
             <ProjectsMobile />
             <ContactMobile />
