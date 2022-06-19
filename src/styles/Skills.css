@@ -1,4 +1,70 @@
 .skillsDesktopMain, .skillsMobileMain {
     height: 100vh;
-    background-color: rgb(85, 85, 85);
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.skillsDesktopDesignDiv1 {
+    background-color: rgb(112, 156, 141);
+    /* background-image: radial-gradient(rgb(131, 185, 167), rgb(112, 156, 141)); */
+    position: absolute;
+    height: 70vh;
+    width: 70%;
+    z-index: 1;
+    top: 125vh;
+    left: 15%;
+    border-radius: 50%;
+    transform: rotate(20deg);
+}
+.skillsDesktopDesignDiv2 {
+    background-color: rgb(35, 46, 42);
+    position: absolute;
+    height: 70vh;
+    width: 70%;
+    z-index: 2;
+    top: 125vh;
+    left: 15%;
+    border-radius: 50%;
+    transform: rotate(-5deg);
+}
+
+.skillsDesktopDiv {
+    color: white;
+    z-index: 99;
+    position: absolute;
+    width: 50%;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skillsDesktopTitle {
+    font-size: 35px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Righteous', cursive;
+}
+.skillsDesktopParagraph {
+    width: 80%;
+}
+
+.skillsDesktopUl {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skillsDesktopSkill {
+    border: 2px white solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+.skillsDesktopSkill:hover {
+    background-color:rgb(10, 10, 10);
 }

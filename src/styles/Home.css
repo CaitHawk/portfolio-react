@@ -1,5 +1,5 @@
 .homeMain {
-    background-color: rgb(35, 46, 42);;
+    background-color: rgb(35, 46, 42);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -58,6 +58,9 @@
     .homeDescriptionDiv {
         padding-left: 5%;
         margin-top: 10%;
+    }
+    .homeDescription {
+        font-size: 20px;
     }
 }
 
