@@ -6,6 +6,7 @@
     display: flex;
     background-color: rgb(10, 10, 10);
     height: 60px;
+    z-index: 1000;
 }
 .headerFullLogoDiv {
     width: 40%;

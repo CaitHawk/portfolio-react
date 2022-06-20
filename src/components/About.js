@@ -1,54 +1,26 @@
-import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
-import { faCss3 } from '@fortawesome/free-brands-svg-icons';
-import { faJs } from '@fortawesome/free-brands-svg-icons';
-import { faReact } from '@fortawesome/free-brands-svg-icons';
-import { faSass } from '@fortawesome/free-brands-svg-icons';
-import { faNodeJs } from '@fortawesome/free-brands-svg-icons';
-import { faBootstrap } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import portfolioPicture from '../portfolioPicture.JPG';
 import '../styles/About.css';
 
-// const skillsArr = [
-//     "HTML 5",
-//     "CSS",
-//     "JavaScript",
-//     "React",
-//     "Next JS",
-//     "Node.js",
-//     "Sass/Scss",
-//     "jQuery",
-//     "Bootstrap"
-// ]
-function SkillsIcons () {
-    return (
-        <div className="skillsIconsDiv">
-            <FontAwesomeIcon icon={faHtml5} />
-            <FontAwesomeIcon icon={faCss3} />
-            <FontAwesomeIcon icon={faJs}/>
-            <FontAwesomeIcon icon={faReact} />
-            <FontAwesomeIcon icon={faNodeJs} />
-            <FontAwesomeIcon icon={faSass} />
-            <FontAwesomeIcon icon={faBootstrap} />
-        </div>
-    )
-}
 
-function AboutDesktop () {
+
+function About() {
     return (
-        <section className="aboutDesktopMain" id="aboutDesktop">
-            <h1>About Desktop</h1>
-            <SkillsIcons />
+        <section className="aboutMain" id="aboutDesktop">
+            <div className="aboutWrapper">
+                <div className="aboutInfoDiv">
+                    {/* <h2 className="aboutDesktopInfoTitle">About me</h2> */}
+                    <h3 className="aboutInfoSubtitle">Career</h3>
+                    <p className="aboutInfoParagraph">Self-motivated self-starter. Nucamp Alumn. Myspace aboutme section pioneer. I've been coding as a hobby since 2019 and changed my career in 2020 after falling in love with all things web development. I currently work on the front-end as my asperations toward server side continues to grow. </p>
+                    <h3 className="aboutInfoSubtitle">Personal Life</h3>
+                    <p className="aboutInfoParagraph">Wife, mother, nature lover, activist, cat owner, island girl. Oahu native with a perfect work-life balance. I'm a puzzle master and logic guru who literally codes for fun. Nothing gets me more than a good book, a good laugh, and good food.</p>
+                    <a href="https://docs.google.com/document/d/1TP0hzK1nOVQASSmwH-zebmyYEt7YB7XKJWe1hTn2WjQ/edit?usp=sharing"
+                        className="aboutInfoButton">VIEW MY RESUME</a>
+                </div>
+                <img alt="Caitlin Neathawk" src={portfolioPicture} className="aboutImg" />
+            </div>
         </section>
     );
 }
 
-function AboutMobile () {
-    return (
-        <main className="aboutMobileMain" id="aboutMobile">
-            <SkillsIcons />
-            <h1>About Mobile</h1>
-        </main>
-    );
-}
 
-export { AboutDesktop, AboutMobile };
+export default About;

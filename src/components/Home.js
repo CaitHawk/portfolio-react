@@ -10,7 +10,7 @@ function Home() {
                     <p className="homeInfo">She/Her | Engineer | Developer</p>
                 </div>
                 <div className="homeDescriptionDiv">
-                    <p className="homeDescription">Hello!</p>
+                    <p className="homeDescription homeDescriptionGreeting">Hello!</p>
                     <p className="homeDescription">Together we can build tools for the future.</p>
                     <p className="homeDescription">Tools that will change the world. Join Me.</p>
                 </div>

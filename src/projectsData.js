@@ -35,7 +35,7 @@ export const projectsData = [
         },
         image: "project 3",
         link: "project 3 link",
-        key: "002",
+        key: "003",
         path: '/portfolio-page'
     },
 ]

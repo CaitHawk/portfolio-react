@@ -1,9 +1,82 @@
-.skillsIconsDiv svg {
-    font-size: 40px;
-    padding: 5px;
+.aboutMain  {
+    height: auto;
+    min-height: 100vh;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
 }
 
-.aboutDesktopMain, .aboutMobileMain {
-    height: 100vh;
-    background-color: rgb(105, 105, 105);
+.aboutWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 80%;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.aboutInfoDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.aboutInfoSubtitle {
+    color: rgb(112, 156, 141);
+    padding: 5px;
+    margin: 0;
+}
+.aboutInfoParagraph {
+    padding: 0 0 20px 0;
+    margin: 5px;
+    text-align: justify;
+}
+.aboutInfoButton {
+    text-decoration: none;
+    color: white;
+    border: solid 2px white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(112, 156, 141);
+    width: 160px;
+    text-align: center;
+    align-self: center;
+}
+.aboutInfoButton:hover {
+    color: white;
+    opacity: .75;
+    cursor: pointer;
+}
+
+.aboutImg {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgb(44, 44, 44);
+    filter: saturate(30%);
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutImg {
+        width: 200px;
+        height: 200px;
+    }    
+}
+
+@media screen and (max-width: 767px) {
+    .aboutWrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .aboutInfoDiv {
+        width: 90%;
+    }
 }

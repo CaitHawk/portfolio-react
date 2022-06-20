@@ -43,6 +43,9 @@
     padding: 10px 0;
     margin: 0;
 }
+.homeDescriptionGreeting {
+    font-size: 30px;
+}
 
 @media screen and (max-width: 1000px) {
     .homeWrapper {
@@ -51,6 +54,7 @@
         align-items: flex-start;
         justify-content: center;
         width: auto;
+        padding-right: 10%;
     }
     .homeTitleDiv {
         padding-left: 5%;
@@ -58,9 +62,13 @@
     .homeDescriptionDiv {
         padding-left: 5%;
         margin-top: 10%;
+        width: 100%;
     }
     .homeDescription {
         font-size: 20px;
+    }
+    .homeDescriptionGreeting {
+        font-size: 25px;
     }
 }
 
@@ -69,7 +77,10 @@
         font-size: 60px;
     }
     .homeDescription {
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .homeDescriptionGreeting {
+        font-size: 20px;
     }
     .homeInfo {
         font-size: 10px;

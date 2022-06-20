@@ -16,7 +16,6 @@ function ProjectsDesktop() {
                                 alt={project.information.title}
                                 className="projectsDesktopLiImg" />
                             <p className="projectsDesktopLiP">{project.information.description}</p>
-                            <a className="projectsDesktopAnchor" href={project.link}>View</a>
                         </li>
                     </Link>
                 ))}
