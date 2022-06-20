@@ -19,7 +19,7 @@ const skillsArray = [
 
 function Skills() {
     return (
-        <section className="skillsMain" id="skillsDesktop">
+        <section className="skillsMain" id="skills">
             <div className="skillsDesignDiv1"></div>
             <div className="skillsDesignDiv2"></div>
             <div className="skillsDiv">

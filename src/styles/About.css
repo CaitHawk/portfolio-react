@@ -60,6 +60,21 @@
     filter: saturate(30%);
     margin-bottom: 30px;
 }
+.aboutSocialLinksDiv {
+    display: flex;
+    width: 100%;
+    align-items: space-around;
+    justify-content: space-evenly;
+    padding-bottom:  20px;
+}
+.aboutSocialLinksDiv a {
+    font-size: 30px;
+    color: white;
+}
+.aboutSocialLinksDiv:hover {
+    color: rgb(112, 156, 141);
+    cursor: pointer;
+}
 
 @media screen and (max-width: 1000px) {
     .aboutImg {

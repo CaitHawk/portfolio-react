@@ -13,9 +13,9 @@ function HeaderFull() {
                 <FontAwesomeIcon icon={faUserAstronaut} className="headerFullLogo" />
             </div>
             <nav className="headerFullNav">
-                <a href="#skillsDesktop">SKILLS</a>
+                <a href="#skills">SKILLS</a>
                 <a href="#projectsDesktop">PROJECTS</a>
-                <a href="#aboutDesktop">ABOUT</a>
+                <a href="#about">ABOUT</a>
                 <a href="#contactDesktop">CONTACT</a>
             </nav>
         </div>
@@ -32,9 +32,9 @@ function HeaderCollapsed() {
         <div className="headerCollapsedDiv">
             <FontAwesomeIcon icon={faUserAstronaut} className="headerCollapsedLogo" />
             <nav className={isOpen ? 'headerCollapsedShow' : 'headerCollapsedHide'}>
-                <a href="#skillsMobile" onClick={toggleMenu}>SKILLS</a>
+                <a href="#skills" onClick={toggleMenu}>SKILLS</a>
                 <a href="#projectsMobile" onClick={toggleMenu}>PROJECTS</a>
-                <a href="#aboutMobile" onClick={toggleMenu}>ABOUT</a>
+                <a href="#about" onClick={toggleMenu}>ABOUT</a>
                 <a href="#contactMobile" onClick={toggleMenu}>CONTACT</a>
             </nav>
             <button onClick={toggleMenu} className="headerCollapsedBtnOpen">
