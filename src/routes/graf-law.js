@@ -1,5 +1,8 @@
+import ProjectRoute from '../components/ProjectRoute';
+// import { grafLaw } from '../projectsData';
+
 export default function GrafLaw() {
     return (
-        <h1>Graf Law</h1>
+        <ProjectRoute />
     );
 }

@@ -1,0 +1,223 @@
+.projectRoutePage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.projectRouteMain {
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+}
+.projectRouteTitleDiv {
+    background-color: rgb(112, 156, 141);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.projectRouteTitleLink {
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+}
+.projectRouteTitleLink:hover {
+    color: gray;
+}
+
+.projectRouteInfoTop {
+    height: auto;
+    margin: 1rem;
+}
+.projectRouteDescriptionDiv {
+    color: white;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projectRouteDescriptionDiv p {
+    width: 90%;
+}
+.projectRouteDescriptionSpan {
+    color: rgb(35, 46, 42);
+}
+.projectRouteChallengeDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px rgb(35, 46, 42);
+    color: rgb(35, 46, 42);
+}
+.projectRouteChallengeDiv h2 {
+    text-align: center;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+}
+.projectRouteChallengeDiv p {
+    padding: 1.5rem;
+    text-align: justify;
+    margin: 0;
+}
+.projectRouteInfoBottom {
+    height: auto;
+    margin: 1rem;
+}
+.projectRouteStackLinkDiv {
+    display: flex;
+    flex-direction: column;
+}
+.projectRouteSolutionDiv {
+    background-color: rgb(35, 46, 42);
+    border: solid 2px rgb(35, 46, 42);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.projectRouteSolutionDiv h2 {
+    text-align: center;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+}
+.projectRouteSolutionDiv p {
+    padding: 1.5rem;
+    text-align: justify;
+    margin: 0;
+}
+.projectRouteStackDiv {
+    width: 100%;
+    background-color: rgb(35, 46, 42);
+    border: solid 2px rgb(35, 46, 42);
+    color: white;
+    margin-bottom: 1rem;
+    height: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.projectRouteStackDiv h3 {
+    text-align: center;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+.projectRouteStackUl {
+    list-style: none;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.projectRouteStackUl li {
+    background-color: rgb(112, 156, 141);
+    border-radius: 5px;
+    color: rgb(35, 46, 42);
+    padding: 3px;
+    margin: 3px;
+    width: auto;
+}
+.projectRouteLinkDiv {
+    width: 100%;
+    border: 2px solid rgb(35, 46, 42);
+    color: rgb(35, 46, 42);
+    height: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projectRouteLinkDiv a {
+    font-size: 40px;
+    color:rgb(35, 46, 42);
+    padding: 20px;
+}
+
+
+
+/* large screens */
+@media screen and (min-width: 768px) {
+    .projectRouteTitle {
+        padding: 0;
+        margin: 0;
+        font-size: 40px;
+    }
+    .projectRouteSubtitle {
+        padding: none;
+        margin: 10px 0;
+        font-size: 20px;
+    }
+    .projectRouteInfoTop {
+        display: flex;
+        flex-direction: row;
+    }
+    .projectRouteDescriptionDiv {
+        height: auto;
+        width: 38%;
+        background-color: rgb(112, 156, 141);
+        border: solid 2px rgb(112, 156, 141);
+        margin-right: 1rem;
+     }
+     .projectRouteChallengeDiv {
+        width: 60%;
+     }
+     .projectRouteInfoBottom {
+        display: flex;
+     }
+     .projectRouteStackLinkDiv {
+        height: auto;
+        width: 38%;
+        margin-right: 1rem;
+     }
+     .projectRouteSolutionDiv {
+        width: 60%;
+     }
+    
+
+}
+
+/* small screens */
+@media screen and (max-width: 767px) {
+    .projectRouteTitle {
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+    }
+    .projectRouteSubtitle {
+        padding: none;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    .projectRouteInfoTop {
+        display: flex;
+        flex-direction: column;
+    }
+    .projectRouteDescriptionDiv {
+        width: 100%;
+        background-color: rgb(112, 156, 141);
+        border: solid 2px rgb(112, 156, 141);
+        margin-bottom: 1rem;
+     }
+     .projectRouteChallengeDiv {
+        width: 100%;
+     }
+     .projectRouteInfoBottom {
+        display: flex;
+        flex-direction: column;
+     }
+     .projectRouteStackLinkDiv {
+        width: 100%;
+        margin-bottom: 1rem;
+     }
+     .projectRouteStackDiv {
+        padding: 25px 0;
+     }
+     .projectRouteSolutionDiv {
+        width: 100%;
+     }
+}

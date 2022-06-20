@@ -19,6 +19,10 @@
     color: rgb(112, 156, 141);
     font-size: 30px;
     padding: 10%;
+    margin-left: 20px;
+}
+.headerFullLogo:hover {
+    color: white;
 }
 .headerFullNav {
     width: 60%;
@@ -43,7 +47,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 60px;
     position: sticky;
     z-index: 99;
     top: 0;
@@ -53,8 +57,11 @@
 
 .headerCollapsedLogo {
     color: rgb(112, 156, 141);
-    padding-left: 5%;
     font-size: 30px;
+    margin-left: 25px;
+}
+.headerCollapsedLogo:hover {
+    color: white;
 }
 
 .headerCollapsedBtnOpen {
@@ -93,4 +100,17 @@
 
 .headerCollapsedHide {
     display: none;
+}
+
+/*large screens */
+@media screen and (min-width: 768px) {
+    .headerCollapsedDiv {
+        display: none;
+    }
+}
+/* small screens */
+@media screen and (max-width: 767px) {
+    .headerFullDiv {
+        display: none;
+    }
 }

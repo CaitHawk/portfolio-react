@@ -1,5 +1,8 @@
+import ProjectRoute from "../components/ProjectRoute";
+
+
 export default function JackOfAllFades () {
     return (
-        <h1>Jack of all fades</h1>
+        <ProjectRoute />
     );
 }

@@ -6,11 +6,11 @@ import '../styles/Projects.css';
 function ProjectsDesktop() {
     return (
         <main className="projectsDesktopMain" id="projectsDesktop">
-            <h1 className="projectsDesktopTitle">Projects Desktop</h1>
+            <h1 className="projectsDesktopTitle">Projects Desktop1</h1>
             <ul className="projectsDesktopUl">
                 {projectsData.map((project) => (
                     <Link to={project.path} className="projectsDesktopLi">
-                        <li key={project.key}>
+                        <li key={`${project.key}0`}>
                             <h3 className="projectsDesktopLiH3">{project.information.title}</h3>
                             <img src={project.image}
                                 alt={project.information.title}
@@ -30,7 +30,7 @@ function ProjectsMobile() {
             <h1>Projects Mobile</h1>
             <ul className="projectsMobileUl">
                 {projectsData.map((project) => (
-                    <li key={project.key + 1} className="projectsMobileLi">
+                    <li key={`${project.key}1`} className="projectsMobileLi">
                         <h3 className="projectMobileLiH3">{project.title}</h3>
                         <img src={project.image}
                             alt={project.title}
