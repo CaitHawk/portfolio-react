@@ -2,6 +2,13 @@ import { useState } from 'react';
 import '../styles/Contact.css';
 import { send } from 'emailjs-com';
 
+// const defaultFormValues = {
+//     from_name: '',
+//         to_name: '',
+//         message: '',
+//         reply_to: '',
+// }
+
 function ContactSection() {
     const [toSend, setToSend] = useState({
         from_name: '',
@@ -20,10 +27,14 @@ function ContactSection() {
         )
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
+                alert("Thank you! Talk to you soon!")
             })
             .catch((err) => {
                 console.log('FAILED...', err);
+                alert("Uh oh! Something went wrong.")
             });
+
+        
     };
 
     const handleChange = (e) => {

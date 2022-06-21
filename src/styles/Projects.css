@@ -1,7 +1,7 @@
 .projectsMain {
     height: auto;
     display: flex;
-    background-color: rgb(35, 46, 42);
+    background-color: #4a4e69;
 }
 
 .projectsTitleDiv {
@@ -13,9 +13,9 @@
     top: 0;
     width: 15vw;
     height: 100vh;
-    background-color: rgb(10, 10, 10);
+    background-color: #22223b;
     font-family: 'Righteous', cursive;
-    color: white;
+    color: #f2e9e4;
     font-size:35px;
 }
 .projectsTitleDiv p {
@@ -37,45 +37,43 @@
     height: auto;
     padding: 0;
 }
+.projectsLiLeft li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projectsLiRight li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-/* .projectsLiH3 {
-    font-size: 40px;
-    position: relative;
-    z-index: 99;
+.projectsLiH3 {
+   color: #f2e9e4;
+   text-decoration: none;
 }
 .projectsLiP {
-    position: relative;
-    z-index: 99;
-    color: white;
-    bottom: 100px;
-    display: inline-block;
-} */
+    color: #f2e9e4;
+    text-decoration: none;
+}
 .projectsLiImg {
-    width: 100%;
-    opacity: .5;
+    display: none;
 }
 
 
 /* large screens */
 @media screen and (min-width: 768px) {
     .projectsLiLeft {
-        border: solid 2px white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        border: solid 2px #f2e9e4;
         height: 600px;
         width: 300px;
         margin: 10vh 10vw;
         align-self: flex-end;
-        /* background-image: url('../images/sampleImage.jpg'); */
     }
     .projectsLiRight {
-        border: solid 2px white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        border: solid 2px #f2e9e4;
         height: auto;
         width: 300px;
         margin: 10vh 10vw;
@@ -86,7 +84,7 @@
 /* small screens */
 @media screen and (max-width: 767px) {
     .projectsLiLeft, .projectsLiRight {
-        border: solid 2px white;
+        border: solid 2px #f2e9e4;
         display: flex;
         flex-direction: column;
         justify-content: center;

@@ -1,4 +1,3 @@
-import porfolioImg from './images/portfolioImage.png';
 
 
 const grafLaw = {
@@ -45,7 +44,6 @@ const portfolioSite = {
     link: "#",
     key: "103",
     path: '/portfolio-page',
-    image: porfolioImg,
 
 }
 

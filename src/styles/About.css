@@ -1,7 +1,7 @@
 .aboutMain  {
     height: auto;
     min-height: 100vh;
-    background-color: rgb(10, 10, 10);
+    background-color: #22223b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
     justify-content: space-around;
     height: 100%;
     width: 80%;
-    color: white;
+    color: #f2e9e4;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .aboutInfoSubtitle {
-    color: rgb(112, 156, 141);
+    color: #9a8c98;
     padding: 5px;
     margin: 0;
 }
@@ -36,18 +36,18 @@
 }
 .aboutInfoButton {
     text-decoration: none;
-    color: white;
-    border: solid 2px white;
+    color: #f2e9e4;
+    border: solid 2px #f2e9e4;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    background-color: rgb(112, 156, 141);
+    background-color: #9a8c98;
     width: 160px;
     text-align: center;
     align-self: center;
 }
 .aboutInfoButton:hover {
-    color: white;
+    color: #f2e9e4;
     opacity: .75;
     cursor: pointer;
 }
@@ -69,10 +69,10 @@
 }
 .aboutSocialLinksDiv a {
     font-size: 30px;
-    color: white;
+    color: #f2e9e4;
 }
 .aboutSocialLinksDiv:hover {
-    color: rgb(112, 156, 141);
+    color: #9a8c98;
     cursor: pointer;
 }
 

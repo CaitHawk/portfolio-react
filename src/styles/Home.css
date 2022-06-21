@@ -1,10 +1,10 @@
 .homeMain {
-    background-color: rgb(35, 46, 42);
+    background-color: #4a4e69;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #f2e9e4;
 }
 .homeWrapper {
     font-family: 'Nunito', sans-serif;
@@ -24,7 +24,7 @@
 
 .homeTitle {
     font-family: 'Righteous', cursive;
-    color: rgb(112, 156, 141);
+    color: #9a8c98;
     font-size: 80px;
     padding: 0;
     margin: 0;

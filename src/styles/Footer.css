@@ -11,7 +11,7 @@
     width: 100%;
 }
 .footerBottom {
-    color: white;
+    color: #f2e9e4;
     font-size: 12px;
     letter-spacing: 1px;
     width: 100%;
@@ -33,7 +33,7 @@
 
 .footerLink {
     text-decoration: none;
-    color: white;
+    color: #f2e9e4;
     font-size: 16px;
     padding: 4px;
     font-family: 'Nunito', sans-serif;
@@ -42,7 +42,7 @@
 
 a:hover {
     cursor: pointer;
-    color: rgb(112, 156, 141);
+    color: #9a8c98;
 }
 
 
@@ -56,7 +56,7 @@ a:hover {
         align-items: center;
     }
     .footerIcon {
-        color: rgb(112, 156, 141);
+        color: #9a8c98;
         font-size: 40px;
     }
 }
