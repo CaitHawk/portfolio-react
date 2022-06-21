@@ -1,29 +1,32 @@
-import { HeaderFull, HeaderCollapsed } from './Header';
 import Footer from './Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faDisplay } from '@fortawesome/free-solid-svg-icons';
+import { faDisplay, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 import '../styles/ProjectRoute.css';
 import '../styles/Header.css';
 import '../styles/Footer.css';
 
 
-const routeStack = ['HTML5', 'CSS3', 'React.js']
-
-function ProjectRoute() {
+function ProjectRoute(props) {
     return (
         <div className="projectRoutePage">
-            <HeaderFull />
-            <HeaderCollapsed />
+            <header className="projectRouteHeader">
+                <Link to="/" className="projectRouteBackButton">
+                    <FontAwesomeIcon className="projectRouteHeaderIcon" icon={faChevronLeft} />
+                    BACK
+                </Link>
+
+            </header>
             <main className="projectRouteMain">
                 <section className="projectRouteTitleDiv">
-                    <h1 className="projectRouteTitle">Project title here</h1>
+                    <h1 className="projectRouteTitle">{ props.title }</h1>
                     <p className="projectRouteSubtitle">Front End Development</p>
                     <div>
-                        <a href="#" className="projectRouteTitleLink">
+                        <a href={ props.repo } target="_blank" className="projectRouteTitleLink">
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
-                        <a href="#" className="projectRouteTitleLink">
+                        <a href={ props.link } target="_blank" className="projectRouteTitleLink">
                             <FontAwesomeIcon icon={faDisplay} />
                         </a>
                     </div>
@@ -31,12 +34,13 @@ function ProjectRoute() {
                 <section className="projectRouteInfoTop">
                     <div className="projectRouteDescriptionDiv">
                         <p className="projectRouteDescription">
-                        <span className="projectRouteDescriptionSpan">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam!
+                        <span className="projectRouteDescriptionSpan">{ props.title }</span>
+                        { props.pageDescription }
                         </p>
                     </div>
                     <div className="projectRouteChallengeDiv">
-                        <h2>Challenge</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat.</p>
+                        <h2>Challenges</h2>
+                        <p>{ props.problems }</p>
                     </div>
                 </section>
                 <section className="projectRouteInfoBottom">
@@ -44,29 +48,29 @@ function ProjectRoute() {
                         <div className="projectRouteStackDiv">
                             <h3>Stack</h3>
                             <ul className="projectRouteStackUl">
-                                {routeStack.map( stack => (
-                                    <li key={`${routeStack.indexOf(stack)}stack`}>
-                                        {stack}
+                                {props.stack.map( s => (
+                                    <li key={`${props.keys}stack`}>
+                                        {s}
                                     </li>
                                 ))}
                             </ul>
                         </div>
                         <div className="projectRouteLinkDiv">
-                            <a href="#" className="projectRouteLink">
+                            <a href={ props.repo } target="_blank" className="projectRouteLink">
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
-                            <a href="#" className="projectRouteLink">
+                            <a href={ props.link } target="_blank" className="projectRouteLink">
                                 <FontAwesomeIcon icon={faDisplay} />
                             </a>
                         </div>
                     </div>
                     <div className="projectRouteSolutionDiv">
                         <h2>Solution</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat.</p>
+                        <p>{ props.solutions }</p>
                     </div>
                 </section>
+                <Footer />
             </main>
-            <Footer />
         </div>
     );
 }

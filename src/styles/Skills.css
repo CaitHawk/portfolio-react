@@ -15,7 +15,7 @@
     height: 70vh;
     width: 70%;
     z-index: 1;
-    top: 125vh;
+    top: 135vh;
     left: 15%;
     border-radius: 50%;
     transform: rotate(20deg);
@@ -26,7 +26,7 @@
     height: 70vh;
     width: 70%;
     z-index: 2;
-    top: 125vh;
+    top: 135vh;
     left: 15%;
     border-radius: 50%;
     transform: rotate(-5deg);

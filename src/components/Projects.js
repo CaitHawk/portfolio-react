@@ -1,21 +1,35 @@
 import { Link } from 'react-router-dom';
 import { projectsData } from '../projectsData';
-import '../styles/Projects.css';
+import '../styles/Projects.css';  
 
 
-function ProjectsDesktop() {
+function ProjectsSection() {
     return (
-        <main className="projectsDesktopMain" id="projectsDesktop">
-            <h1 className="projectsDesktopTitle">Projects Desktop1</h1>
-            <ul className="projectsDesktopUl">
+        <main className="projectsMain" id="projectsSection">
+            <div className="projectsTitleDiv">
+                <p>F</p>
+                <p>E</p>
+                <p>A</p>
+                <p>T</p>
+                <p>U</p>
+                <p>R</p>
+                <p>E</p>
+                <p>D</p>
+            </div>
+            <ul className="projectsUl">
                 {projectsData.map((project) => (
-                    <Link to={project.path} className="projectsDesktopLi">
-                        <li key={`${project.key}0`}>
-                            <h3 className="projectsDesktopLiH3">{project.information.title}</h3>
-                            <img src={project.image}
-                                alt={project.information.title}
-                                className="projectsDesktopLiImg" />
-                            <p className="projectsDesktopLiP">{project.information.description}</p>
+                    <Link to={project.path} 
+                        className={ projectsData.indexOf(project) % 2 === 0 ?
+                            "projectsLiLeft" :
+                            "projectsLiRight" }>
+                        <li key={`${project.key}01`} 
+                            style={{ 
+                            backgroundImage: `url(${project.image})`,
+                            width: "100%",
+                            height: "700px"
+                            }}>
+                            <h3 className="projectsLiH3">{project.information.title}</h3>
+                            <p className="projectsLiP">{project.information.cardDescription}</p>
                         </li>
                     </Link>
                 ))}
@@ -24,24 +38,5 @@ function ProjectsDesktop() {
     );
 }
 
-function ProjectsMobile() {
-    return (
-        <main id="projectsMobile">
-            <h1>Projects Mobile</h1>
-            <ul className="projectsMobileUl">
-                {projectsData.map((project) => (
-                    <li key={`${project.key}1`} className="projectsMobileLi">
-                        <h3 className="projectMobileLiH3">{project.title}</h3>
-                        <img src={project.image}
-                            alt={project.title}
-                            className="projectsMobileLiImg" />
-                        <p className="projectsMobileLiP">{project.description}</p>
-                        <a className="projectsMobileAnchor" href={project.link}>View</a>
-                    </li>
-                ))}
-            </ul>
-        </main>
-    );
-}
 
-export { ProjectsDesktop, ProjectsMobile };
+export default ProjectsSection;

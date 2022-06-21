@@ -16,10 +16,10 @@ function HeaderFull() {
                 </Link>
             </div>
             <nav className="headerFullNav">
-                <a href="#skillsDesktop">SKILLS</a>
-                <a href="#projectsDesktop">PROJECTS</a>
-                <a href="#aboutDesktop">ABOUT</a>
-                <a href="#contactDesktop">CONTACT</a>
+                <a href="#skillsSection">SKILLS</a>
+                <a href="#projectsSection">PROJECTS</a>
+                <a href="#aboutSection">ABOUT</a>
+                <a href="#contactSection">CONTACT</a>
             </nav>
         </div>
     );
@@ -37,10 +37,10 @@ function HeaderCollapsed() {
                 <FontAwesomeIcon icon={faUserAstronaut} className="headerCollapsedLogo" />
             </Link>
             <nav className={isOpen ? 'headerCollapsedShow' : 'headerCollapsedHide'}>
-                <a href="#skillsMobile" onClick={toggleMenu}>SKILLS</a>
-                <a href="#projectsMobile" onClick={toggleMenu}>PROJECTS</a>
-                <a href="#aboutMobile" onClick={toggleMenu}>ABOUT</a>
-                <a href="#contactMobile" onClick={toggleMenu}>CONTACT</a>
+                <a href="#skillsSection" onClick={toggleMenu}>SKILLS</a>
+                <a href="#projectsSection" onClick={toggleMenu}>PROJECTS</a>
+                <a href="#aboutSection" onClick={toggleMenu}>ABOUT</a>
+                <a href="#contactSection" onClick={toggleMenu}>CONTACT</a>
             </nav>
             <button onClick={toggleMenu} className="headerCollapsedBtnOpen">
                 <FontAwesomeIcon icon={faBars} />
@@ -48,5 +48,7 @@ function HeaderCollapsed() {
         </div>
     )
 }
+
+
 
 export { HeaderFull, HeaderCollapsed };

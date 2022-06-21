@@ -1,8 +1,8 @@
 import '../styles/Home.css';
 
-function Home() {
+function HomeSection() {
     return (
-        <section className="homeMain" id="homeDesktop">
+        <section className="homeMain" id="homeSection">
             <div className="homeWrapper">
                 <div className="homeTitleDiv">
                     <p className="homeTitle">Caitlin</p>
@@ -20,4 +20,4 @@ function Home() {
 }
 
 
-export default Home;
+export default HomeSection;

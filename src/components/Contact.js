@@ -1,19 +1,11 @@
 import '../styles/Contact.css';
 
-function ContactDesktop() {
+function ContactSection() {
     return (
-        <section className="contactDesktopMain" id="contactDesktop">
-            <h1>Contact Desktop</h1>
+        <section className="contactMain" id="contactSection">
+            <h1>neathawkcaitlin@gmail.com</h1>
         </section >
     );
 }
 
-function ContactMobile() {
-    return (
-        <section className="contactMobileMain" id="contactMobile">
-            <h1>Contact Mobile</h1>
-        </section>
-    );
-}
-
-export { ContactDesktop, ContactMobile };
+export default ContactSection;

@@ -1,13 +1,41 @@
-.projectRoutePage {
+/* .projectRoutePage {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
-}
+} */
 
 .projectRouteMain {
     background-color: white;
     font-family: 'Nunito', sans-serif;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+}
+
+.projectRouteHeader {
+    font-family: 'Nunito', sans-serif;
+    position: absolute;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    display: flex;
+    align-items: center;
+}
+.projectRouteBackButton {
+    color: white;
+    font-size: 22px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+.projectRouteHeaderIcon {
+    font-size: 18px;
+    margin: 0 5px;
+    padding: 0
+
 }
 .projectRouteTitleDiv {
     background-color: rgb(112, 156, 141);

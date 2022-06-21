@@ -1,40 +1,99 @@
-.projectsDesktopMain {
-    height: 100vh;
-}
-
-.projectsMobileUl, .projectsDesktopUl {
-    font-family: 'Nunito', sans-serif;
-    list-style: none;
-}
-
-.projectsDesktopUl {
+.projectsMain {
+    height: auto;
     display: flex;
-    justify-content: space-around;
+    background-color: rgb(35, 46, 42);
 }
 
-.projectsDesktopLi {
-    border: solid 2px red;
+.projectsTitleDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 40%;
-    height: auto;
-}
-
-.projectsDesktopLiH3 {
-    font-size: 40px;
-}
-
-.projectsDesktopAnchor, .projectsMobileAnchor {
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    width: 15vw;
+    height: 100vh;
+    background-color: rgb(10, 10, 10);
+    font-family: 'Righteous', cursive;
     color: white;
-    text-decoration: none;
-    border: solid 2px white;
-    border-radius: 5px;
-    padding: 8px 18px;
-    font-size: 20px;
-    background-color: black;
-    text-align: center;
-    width: auto;
-    margin: 5%;
+    font-size:35px;
+}
+.projectsTitleDiv p {
+    padding: 0 0 0 5vw;
+    margin: 0;
+}
+
+.projectsUl {
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+    width: 80vw;
+}
+
+.projectsUl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 60px 0;
+    height: auto;
+    padding: 0;
+}
+
+/* .projectsLiH3 {
+    font-size: 40px;
+    position: relative;
+    z-index: 99;
+}
+.projectsLiP {
+    position: relative;
+    z-index: 99;
+    color: white;
+    bottom: 100px;
+    display: inline-block;
+} */
+.projectsLiImg {
+    width: 100%;
+    opacity: .5;
+}
+
+
+/* large screens */
+@media screen and (min-width: 768px) {
+    .projectsLiLeft {
+        border: solid 2px white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        width: 300px;
+        margin: 10vh 10vw;
+        align-self: flex-end;
+        /* background-image: url('../images/sampleImage.jpg'); */
+    }
+    .projectsLiRight {
+        border: solid 2px white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 300px;
+        margin: 10vh 10vw;
+        align-self: flex-start;
+    }
+}
+
+/* small screens */
+@media screen and (max-width: 767px) {
+    .projectsLiLeft, .projectsLiRight {
+        border: solid 2px white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        width: 90%;
+        align-self: center;
+        margin: 20px 0;
+    }
 }
