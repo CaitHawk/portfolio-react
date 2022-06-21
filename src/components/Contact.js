@@ -38,7 +38,7 @@ function ContactSection() {
                     <input
                         type='text'
                         name='from_name'
-                        placeholder='from name'
+                        placeholder='Your Name'
                         value={toSend.from_name}
                         onChange={handleChange}
                         className="contactFromInput"
@@ -46,7 +46,7 @@ function ContactSection() {
                     <input
                         type='text'
                         name='to_name'
-                        placeholder='to name'
+                        placeholder='Caitlin Neathawk'
                         value={toSend.to_name}
                         onChange={handleChange}
                         className="contactToInput"
@@ -68,7 +68,7 @@ function ContactSection() {
                     onChange={handleChange}
                     className="contactMessageInput"
                 />
-                <button type='submit'>Submit</button>
+                <button type='submit' className="contactSubmitBtn">SEND</button>
             </form>
         </section >
     );

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { projectsData } from '../projectsData';
+import {v4 as uuidv4} from 'uuid';
 import '../styles/Projects.css';  
 
 
@@ -22,7 +23,7 @@ function ProjectsSection() {
                         className={ projectsData.indexOf(project) % 2 === 0 ?
                             "projectsLiLeft" :
                             "projectsLiRight" }>
-                        <li key={`${project.key}01`} 
+                        <li key={uuidv4()} 
                             style={{ 
                             backgroundImage: `url(${project.image})`,
                             width: "100%",

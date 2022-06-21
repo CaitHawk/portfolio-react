@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faDisplay, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 import '../styles/ProjectRoute.css';
 import '../styles/Header.css';
 import '../styles/Footer.css';
@@ -20,13 +21,21 @@ function ProjectRoute(props) {
             </header>
             <main className="projectRouteMain">
                 <section className="projectRouteTitleDiv">
-                    <h1 className="projectRouteTitle">{ props.title }</h1>
+                    <h1 className="projectRouteTitle">{props.title}</h1>
                     <p className="projectRouteSubtitle">Front End Development</p>
                     <div>
-                        <a href={ props.repo } target="_blank" className="projectRouteTitleLink">
+                        <a
+                            href={props.repo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="projectRouteTitleLink">
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
-                        <a href={ props.link } target="_blank" className="projectRouteTitleLink">
+                        <a
+                            href={props.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="projectRouteTitleLink">
                             <FontAwesomeIcon icon={faDisplay} />
                         </a>
                     </div>
@@ -34,13 +43,13 @@ function ProjectRoute(props) {
                 <section className="projectRouteInfoTop">
                     <div className="projectRouteDescriptionDiv">
                         <p className="projectRouteDescription">
-                        <span className="projectRouteDescriptionSpan">{ props.title }</span>
-                        { props.pageDescription }
+                            <span className="projectRouteDescriptionSpan">{props.title}</span>
+                            {props.pageDescription}
                         </p>
                     </div>
                     <div className="projectRouteChallengeDiv">
                         <h2>Challenges</h2>
-                        <p>{ props.problems }</p>
+                        <p>{props.problems}</p>
                     </div>
                 </section>
                 <section className="projectRouteInfoBottom">
@@ -48,25 +57,33 @@ function ProjectRoute(props) {
                         <div className="projectRouteStackDiv">
                             <h3>Stack</h3>
                             <ul className="projectRouteStackUl">
-                                {props.stack.map( s => (
-                                    <li key={`${props.keys}stack`}>
+                                {props.stack.map(s => (
+                                    <li key={uuidv4()}>
                                         {s}
                                     </li>
                                 ))}
                             </ul>
                         </div>
                         <div className="projectRouteLinkDiv">
-                            <a href={ props.repo } target="_blank" className="projectRouteLink">
+                            <a
+                                href={props.repo}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="projectRouteLink">
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
-                            <a href={ props.link } target="_blank" className="projectRouteLink">
+                            <a
+                                href={props.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="projectRouteLink">
                                 <FontAwesomeIcon icon={faDisplay} />
                             </a>
                         </div>
                     </div>
                     <div className="projectRouteSolutionDiv">
                         <h2>Solution</h2>
-                        <p>{ props.solutions }</p>
+                        <p>{props.solutions}</p>
                     </div>
                 </section>
                 <Footer />

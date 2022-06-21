@@ -20,9 +20,23 @@ export default function Footer() {
                     <FontAwesomeIcon className="footerIcon" icon={faUserAstronaut} />
                 </div>
                 <div className="footerSocialLinks">
-                    <a className="footerLink" href="https://github.com/CaitHawk" target="_blank"><FontAwesomeIcon icon={faGithub} /> GitHub</a>
-                    <a className="footerLink" href="https://twitter.com/CaitlinNeathawk" target="_blank"><FontAwesomeIcon icon={faTwitter} /> Twitter</a>
-                    <a className="footerLink" href="https://www.linkedin.com/in/caitlin-neathawk-56216a228/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</a>
+                    <a
+                        className="footerLink"
+                        href="https://github.com/CaitHawk"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub} /> GitHub</a>
+                    <a
+                        className="footerLink"
+                        href="https://twitter.com/CaitlinNeathawk"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faTwitter} /> Twitter</a>
+                    <a
+                        className="footerLink"
+                        href="https://www.linkedin.com/in/caitlin-neathawk-56216a228/"
+                        target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faLinkedin} /> LinkedIn</a>
                 </div>
             </div>
             <div className="footerBottom">

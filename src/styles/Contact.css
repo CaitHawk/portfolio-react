@@ -16,3 +16,71 @@
     display: flex;
     flex-direction: column;
 }
+.contactToFromDiv {
+    display: flex;
+}
+.contactToInput, 
+.contactFromInput,
+.contactEmailInput,
+.contactMessageInput {
+    height: 30px;
+    margin: 4px;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    padding: 6px 10px;
+    border: 3px solid white;
+    border-radius: 5px;
+    /* background-color: rgb(35, 46, 42); */
+    background-color: rgb(187, 186, 186);
+    color: black;
+    font-weight: 800;
+}
+.contactMessageInput {
+    height: 70px;
+}
+.contactSubmitBtn {
+    background-color: rgb(112, 156, 141);
+    width: 50%;
+    align-self: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: solid 2px white;
+    color: white;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+.contactSubmitBtn:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+@media screen and (max-width: 767px) {
+    .contactForm {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactToFromDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .contactFromInput {
+        width: 80%;
+        align-self: center;
+        justify-self: center;
+    }
+    .contactToInput {
+        width: 80%;
+    }
+    .contactEmailInput {
+        width: 80%;
+    }
+    .contactMessageInput {
+        width: 80%;
+    }
+}
