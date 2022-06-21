@@ -3,6 +3,7 @@
     background-color: rgb(35, 46, 42);
     font-family: 'Nunito', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
@@ -10,4 +11,8 @@
 }
 .contactMain h1 {
     font-size: 40px;
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
 }
