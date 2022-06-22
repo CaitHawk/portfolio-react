@@ -39,7 +39,7 @@ const portfolioSite = {
         problems: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat.",
         solutions: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat."
     },
-    stack: ["React", "React Router", "CSS3", "Font Awesome"],
+    stack: ["React", "React Router", "CSS3", "EmailJs", "Font Awesome"],
     repo: "https://github.com/CaitHawk/portfolio-react",
     link: "#",
     key: "103",
@@ -78,7 +78,7 @@ const yahtzeeClone = {
 
 const javascriptCalculator = {
     information: {
-        title: "JavaScript Calculator",
+        title: "JS Calculator",
         cardDescription: "project 3 card description",
         pageDescription: " was my first complicated JavaScript practice project using just Vanilla JavaScript.",
         problems: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat.",
