@@ -1,7 +1,7 @@
 .projectsMain {
     height: auto;
     display: flex;
-    background-color: #4a4e69;
+    background-color: #a2ad91;
 }
 
 .projectsTitleDiv {
@@ -13,14 +13,18 @@
     top: 0;
     width: 15vw;
     height: 100vh;
-    background-color: #22223b;
-    font-family: 'Righteous', cursive;
-    color: #f2e9e4;
+    background-color: rgb(10, 10, 10);
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Fredericka the Great', cursive;
+    color: #e47545;
     font-size:35px;
 }
 .projectsTitleDiv p {
-    padding: 0 0 0 5vw;
+    padding: 0 0 2vh 5vw;
     margin: 0;
+}
+.projectsAlternateP {
+    color: #e1a647;
 }
 
 .projectsUl {

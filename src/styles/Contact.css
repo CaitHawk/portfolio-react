@@ -1,6 +1,6 @@
 .contactMain {
     height: 100vh;
-    background-color: #4a4e69;
+    background-color: #2a4849;
     font-family: 'Nunito', sans-serif;
     display: flex;
     flex-direction: column;
@@ -11,15 +11,23 @@
 }
 .contactMain h1 {
     font-size: 40px;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
+    color: #e47545;
+}
+.contactSpan {
+    color: #e1a647
 }
 .contactForm {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 .contactToFromDiv {
     display: flex;
-}
-.contactToInput, 
+} 
 .contactFromInput,
 .contactEmailInput,
 .contactMessageInput {
@@ -33,19 +41,21 @@
     background-color: rgb(187, 186, 186);
     color: black;
     font-weight: 800;
+    width: 50%;
 }
 .contactMessageInput {
     height: 70px;
 }
 .contactSubmitBtn {
-    background-color: #9a8c98;
-    width: 50%;
+    background-color: #a2ad91;
+    width: 160px;
     align-self: center;
     margin-top: 30px;
     padding: 10px 0;
     border-radius: 10px;
-    border: solid 2px #f2e9e4;
-    color: #f2e9e4;
+    /* border: solid 2px #f2e9e4; */
+    border: none;
+    color: #2a4849;
     font-size: 20px;
     font-family: 'Nunito', sans-serif;
 }

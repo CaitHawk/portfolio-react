@@ -44,9 +44,71 @@ const portfolioSite = {
     link: "#",
     key: "103",
     path: '/portfolio-page',
-
 }
 
-const projectsData = [grafLaw, jackOfAllFades, portfolioSite];
+const wordleClone = {
+    information: {
+        title: "Wordle Clone",
+        cardDescription: "project 3 card description",
+        pageDescription: " is a 'for fun' application meant to clone the popular game 'Wordle'.",
+        problems: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat.",
+        solutions: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat."
+    },
+    stack: ["React", "Axios", "Cors", "Dotenv", "Express", "Nodemon", "RapidApi", "CSS3",],
+    repo: "https://github.com/CaitHawk/worddle-app",
+    link: "#",
+    key: "104",
+    path: '/wordle-clone',
+}
 
-export { grafLaw, jackOfAllFades, portfolioSite, projectsData };
+const yahtzeeClone = {
+    information: {
+        title: "Yahtzee Clone",
+        cardDescription: "project 3 card description",
+        pageDescription: " is a 'for fun' application meant to clone the popular game 'Yahtzee'.",
+        problems: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat.",
+        solutions: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat."
+    },
+    stack: ["React", "CSS3", "Keyframe Animations", "Enzyme"],
+    repo: "https://github.com/CaitHawk/yahtzee",
+    link: "#",
+    key: "105",
+    path: '/yahtzee-clone',
+}
+
+const javascriptCalculator = {
+    information: {
+        title: "JavaScript Calculator",
+        cardDescription: "project 3 card description",
+        pageDescription: " was my first complicated JavaScript practice project using just Vanilla JavaScript.",
+        problems: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat.",
+        solutions: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat."
+    },
+    stack: ["HTML", "CSS", "Javascript"],
+    repo: "#",
+    link: "https://codepen.io/caithawk/pen/qBrqyPW",
+    key: "106",
+    path: '/javascript-calculator',
+}
+
+
+
+
+const projectsData = [
+    grafLaw,
+    jackOfAllFades,
+    portfolioSite,
+    wordleClone,
+    yahtzeeClone,
+    javascriptCalculator
+];
+
+export { 
+    grafLaw,
+    jackOfAllFades,
+    portfolioSite,
+    wordleClone,
+    yahtzeeClone,
+    javascriptCalculator,
+    projectsData
+};

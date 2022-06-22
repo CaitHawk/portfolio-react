@@ -2,17 +2,11 @@ import { useState } from 'react';
 import '../styles/Contact.css';
 import { send } from 'emailjs-com';
 
-// const defaultFormValues = {
-//     from_name: '',
-//         to_name: '',
-//         message: '',
-//         reply_to: '',
-// }
 
 function ContactSection() {
     const [toSend, setToSend] = useState({
         from_name: '',
-        to_name: '',
+        to_name: 'Caitlin',
         message: '',
         reply_to: '',
     });
@@ -34,7 +28,7 @@ function ContactSection() {
                 alert("Uh oh! Something went wrong.")
             });
 
-        
+
     };
 
     const handleChange = (e) => {
@@ -43,26 +37,17 @@ function ContactSection() {
 
     return (
         <section className="contactMain" id="contactSection">
-            <h1>Say Hello!</h1>
+            <h1>Say <span className="contactSpan">Hello</span>!</h1>
             <form onSubmit={onSubmit} className="contactForm">
-                <div className="contactToFromDiv">
-                    <input
-                        type='text'
-                        name='from_name'
-                        placeholder='Your Name'
-                        value={toSend.from_name}
-                        onChange={handleChange}
-                        className="contactFromInput"
-                    />
-                    <input
-                        type='text'
-                        name='to_name'
-                        placeholder='Caitlin Neathawk'
-                        value={toSend.to_name}
-                        onChange={handleChange}
-                        className="contactToInput"
-                    />
-                </div>
+                <input
+                    type='text'
+                    name='from_name'
+                    placeholder='Your Name'
+                    value={toSend.from_name}
+                    onChange={handleChange}
+                    className="contactFromInput"
+                    required
+                />
                 <input
                     type='text'
                     name='reply_to'
@@ -70,6 +55,7 @@ function ContactSection() {
                     value={toSend.reply_to}
                     onChange={handleChange}
                     className="contactEmailInput"
+                    required
                 />
                 <input
                     type='text'
@@ -78,6 +64,7 @@ function ContactSection() {
                     value={toSend.message}
                     onChange={handleChange}
                     className="contactMessageInput"
+                    required
                 />
                 <button type='submit' className="contactSubmitBtn">SEND</button>
             </form>

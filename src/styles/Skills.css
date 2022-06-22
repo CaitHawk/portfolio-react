@@ -1,7 +1,7 @@
 .skillsMain {
     min-height: 100vh;
     height: auto;
-    background-color: #22223b;
+    background-color: rgb(10, 10, 10);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -9,7 +9,7 @@
     padding-top: 60px;
 }
 .skillsDesignDiv1 {
-    background-color: #9a8c98;
+    background-color: #e47545;
     position: absolute;
     height: 70vh;
     width: 70%;
@@ -20,7 +20,7 @@
     transform: rotate(20deg);
 }
 .skillsDesignDiv2 {
-    background-color: #4a4e69;
+    background-color: #667b6d;
     position: absolute;
     height: 70vh;
     width: 70%;
@@ -32,7 +32,7 @@
 }
 
 .skillsDiv {
-    color: #f2e9e4;
+    color: rgb(10, 10, 10);
     z-index: 99;
     position: absolute;
     width: 50%;
@@ -49,7 +49,8 @@
     text-align: center;
     padding: 0;
     margin: 0;
-    font-family: 'Righteous', cursive;
+    font-family: 'Abril Fatface', cursive;
+    color:#2a4849;
 }
 .skillsParagraph {
     width: 80%;
@@ -61,13 +62,17 @@
     flex-wrap: wrap;
 }
 .skillsSkill {
-    border: 2px #f2e9e4 solid;
+    /* border: 2px #e1a647 solid; */
     border-radius: 5px;
     padding: 3px 5px;
     margin: 5px;
+    color: rgb(10, 10, 10);
+    background-color: #e1a647;
 }
 .skillsSkill:hover {
-    background-color:#22223b;
+    color: rgb(10, 10, 10);
+    /* border: solid 2px #e47545; */
+    background-color: #e47545;
 }
 
 @media screen and (max-width: 880px) {

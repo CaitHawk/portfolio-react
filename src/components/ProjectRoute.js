@@ -2,6 +2,7 @@ import Footer from './Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faDisplay, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import '../styles/ProjectRoute.css';
@@ -10,6 +11,9 @@ import '../styles/Footer.css';
 
 
 function ProjectRoute(props) {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
     return (
         <div className="projectRoutePage">
             <header className="projectRouteHeader">

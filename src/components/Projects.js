@@ -9,13 +9,13 @@ function ProjectsSection() {
         <main className="projectsMain" id="projectsSection">
             <div className="projectsTitleDiv">
                 <p>F</p>
-                <p>E</p>
+                <p className="projectsAlternateP">E</p>
                 <p>A</p>
-                <p>T</p>
+                <p className="projectsAlternateP">T</p>
                 <p>U</p>
-                <p>R</p>
+                <p className="projectsAlternateP">R</p>
                 <p>E</p>
-                <p>D</p>
+                <p className="projectsAlternateP">D</p>
             </div>
             <ul className="projectsUl">
                 {projectsData.map((project) => (

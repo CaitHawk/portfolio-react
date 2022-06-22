@@ -14,7 +14,8 @@ const skillsArray = [
     'Node.js',
     'Git',
     'jQuery',
-    'Chakra UI'
+    'Express',
+    'Axios'
 ];
 
 function SkillsSection() {

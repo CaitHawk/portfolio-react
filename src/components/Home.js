@@ -6,7 +6,7 @@ function HomeSection() {
             <div className="homeWrapper">
                 <div className="homeTitleDiv">
                     <p className="homeTitle">Caitlin</p>
-                    <p className="homeTitle">Neathawk</p>
+                    <p className="homeTitle2">Neathawk</p>
                     <p className="homeInfo">She/Her | Engineer | Developer</p>
                 </div>
                 <div className="homeDescriptionDiv">
