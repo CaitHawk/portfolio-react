@@ -27,8 +27,12 @@ function ContactSection() {
                 console.log('FAILED...', err);
                 alert("Uh oh! Something went wrong.")
             });
-
-
+        setToSend({
+            ...toSend,
+            from_name: '',
+            message: '',
+            reply_to: '',
+        });
     };
 
     const handleChange = (e) => {
