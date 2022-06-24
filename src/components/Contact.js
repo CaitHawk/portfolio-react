@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import '../styles/Contact.css';
 import { send } from 'emailjs-com';
+import '../styles/Contact.css';
 
 
 function ContactSection() {

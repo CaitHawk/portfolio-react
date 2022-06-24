@@ -4,25 +4,32 @@ import {
     Routes,
     Route
 } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
+import { projectsData } from './projectsData';
 import App from './App';
-import JackOfAllFades from './routes/jack-of-all-fades';
-import GrafLaw from './routes/graf-law';
-import PortfolioPage from './routes/portfolio-page';
-import WordleClone from './routes/worddle-clone';
-import YahtzeeClone from './routes/yahtzee-clone';
-import JavascriptCalculator from './routes/javascript-calculator';
+import ProjectRoute from './components/ProjectRoute';
 
 export default function Router() {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App />} />
-                <Route path="/jack-of-all-fades" element={<JackOfAllFades />} />
-                <Route path="/graf-law" element={<GrafLaw />} />
-                <Route path='/portfolio-page' element={<PortfolioPage />} />
-                <Route path="/wordle-clone" element={<WordleClone />} />
-                <Route path="/yahtzee-clone" element={<YahtzeeClone />} />
-                <Route path="/javascript-calculator" element={<JavascriptCalculator />} />
+                {projectsData.map(project => (
+                    <Route path={project.path}
+                        key={uuidv4()}
+                        element={
+                            <ProjectRoute
+                                title={project.information.title}
+                                pageDescription={project.information.pageDescription}
+                                problems={project.information.problems}
+                                solutions={project.information.solutions}
+                                stack={project.stack}
+                                repo={project.repo}
+                                link={project.link}
+                            />
+                        }
+                    />
+                ))}
             </Routes>
         </BrowserRouter>
     );

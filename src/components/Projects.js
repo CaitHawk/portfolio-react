@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
-import { projectsData } from '../projectsData';
 import { v4 as uuidv4 } from 'uuid';
-import '../styles/Projects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBalanceScale } from '@fortawesome/free-solid-svg-icons';
-import { faScissors } from '@fortawesome/free-solid-svg-icons';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { faMobileScreenButton } from '@fortawesome/free-solid-svg-icons';
-import { faDice } from '@fortawesome/free-solid-svg-icons';
-import { faCalculator } from '@fortawesome/free-solid-svg-icons';
+import { faBalanceScale, 
+    faScissors, 
+    faUser, 
+    faMobileScreenButton, 
+    faDice, 
+    faCalculator } from '@fortawesome/free-solid-svg-icons';
+import { projectsData } from '../projectsData';
+import '../styles/Projects.css';
 
 const icons = [faBalanceScale, faScissors, faUser, faMobileScreenButton, faDice, faCalculator];
 

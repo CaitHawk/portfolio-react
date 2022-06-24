@@ -1,10 +1,10 @@
-import Footer from './Footer';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faDisplay, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faDisplay, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import Footer from './Footer';
 import '../styles/ProjectRoute.css';
 import '../styles/Header.css';
 import '../styles/Footer.css';

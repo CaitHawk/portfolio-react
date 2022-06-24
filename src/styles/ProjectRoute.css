@@ -64,6 +64,7 @@
 .projectRouteInfoTop {
     height: auto;
     margin: 1rem;
+    max-width: 1600px;
 }
 .projectRouteDescriptionDiv {
     color: #f2e9e4;
@@ -95,10 +96,13 @@
     padding: 1.5rem;
     text-align: justify;
     margin: 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 .projectRouteInfoBottom {
     height: auto;
     margin: 1rem;
+    max-width: 1600px;
 }
 .projectRouteStackLinkDiv {
     display: flex;
@@ -122,6 +126,8 @@
     padding: 1.5rem;
     text-align: justify;
     margin: 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 .projectRouteStackDiv {
     width: 100%;
