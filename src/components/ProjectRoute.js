@@ -78,6 +78,7 @@ function ProjectRoute(props) {
                             </a>
                             <a
                                 href={props.link}
+                                disabled={!props.link.length && false}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="projectRouteLink">
