@@ -47,7 +47,7 @@ const portfolioSite = {
 const wordleClone = {
     information: {
         title: "Wordle Clone",
-        cardDescription: "project 3 card description",
+        cardDescription: "A replica of the popular mobile game 'Worddle using react.",
         pageDescription: " is a 'for fun' application meant to clone the popular game 'Wordle'.",
         problems: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat.",
         solutions: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat."
@@ -61,7 +61,7 @@ const wordleClone = {
 const yahtzeeClone = {
     information: {
         title: "Yahtzee Clone",
-        cardDescription: "project 3 card description",
+        cardDescription: "A replica of the popular game 'Yahtzee' using react.",
         pageDescription: " is a 'for fun' application meant to clone the popular game 'Yahtzee'.",
         problems: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat.",
         solutions: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat."

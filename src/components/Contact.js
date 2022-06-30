@@ -42,7 +42,7 @@ function ContactSection() {
     return (
         <section className="contactMain" id="contactSection">
             <h1>Say <span className="contactSpan">Hello</span>!</h1>
-            <form onSubmit={onSubmit} className="contactForm">
+            <form onSubmit={onSubmit} className="contactForm" action="?" method="POST">
                 <input
                     type='text'
                     name='from_name'
@@ -70,6 +70,7 @@ function ContactSection() {
                     className="contactMessageInput"
                     required
                 />
+                <div className="g-recaptcha" data-sitekey="6LdM3K8gAAAAAHQSOmLpl5R8bnmTU7yJcHDorQ4R"></div>
                 <button type='submit' className="contactSubmitBtn">SEND</button>
             </form>
         </section >
