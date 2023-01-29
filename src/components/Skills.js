@@ -4,18 +4,23 @@ const skillsArray = [
     'HTML5',
     'CSS3',
     'Javascript',
+    'ES6',
     'Sass/Scss',
+    'Less',
     'React',
     'Next JS',
     'Tailwind CSS',
     'Bootstrap',
     'Material UI',
-    'Gatsby',
+    'Prismic',
     'Node.js',
     'Git',
     'jQuery',
     'Express',
-    'Axios'
+    'Axios',
+    'AWS',
+    'Storybook',
+    'Confluence',
 ];
 
 function SkillsSection() {

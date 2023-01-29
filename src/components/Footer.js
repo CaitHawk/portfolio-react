@@ -9,7 +9,7 @@ export default function Footer() {
         <section className="footerMain">
             <div className="footerTop">
                 <div className="footerContactLinks">
-                    <p className="footerLink"><FontAwesomeIcon icon={faEnvelope} /> neathawkcaitlin@gmail.com</p>
+                    <p className="footerLink"><FontAwesomeIcon icon={faEnvelope} /> caitlinneathawk.dev@gmail.com</p>
                     <p className="footerLink"><FontAwesomeIcon icon={faLocationDot} /> Las Vegas, NV</p>
                 </div>
                 <div className="footerIconDiv">
