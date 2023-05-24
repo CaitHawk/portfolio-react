@@ -11,7 +11,7 @@ function AboutSection() {
             <div className="aboutWrapper">
                 <div className="aboutInfoDiv">
                     <h3 className="aboutInfoSubtitle">Career</h3>
-                    <p className="aboutInfoParagraph">Self-motivated self-starter. Nucamp Alumn. Myspace "about me" section pioneer. I've been coding as a hobby since 2019 and changed my career in 2020 after falling in love with all things web development. I currently work on the front-end as my asperations toward server side continues to grow. </p>
+                    <p className="aboutInfoParagraph">Self-motivated self-starter. Nucamp Alumn. Myspace "about me" section pioneer. I've been coding as a hobby since 2019 and changed my career in 2020 after falling in love with all things web development. I currently work on the front-end as my asperations toward server side continue to grow. </p>
                     <h3 className="aboutInfoSubtitle">Personal Life</h3>
                     <p className="aboutInfoParagraph">Wife, mother, nature lover, activist, cat owner, island girl. Oahu native with a perfect work-life balance. I'm a puzzle master and logic guru who literally codes for fun. Nothing gets me more than a good book, a good laugh, and good food.</p>
                     <a href="https://drive.google.com/file/d/1a-HbJkwbLGc2EhugDtR8SwrHKTUKx5PM/view?usp=sharing"
