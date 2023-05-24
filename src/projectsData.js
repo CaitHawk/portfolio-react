@@ -1,5 +1,4 @@
 
-
 const grafLaw = {
     information: {
         title: "Graf Law",
@@ -14,6 +13,38 @@ const grafLaw = {
     key: "101",
     path: '/graf-law'
 };
+
+const easyKnock = {
+    information: {
+        title: "EasyKnock.com",
+        cardDescription: "A Real Eastate base tech start-up offering an innovative sale-leasback program for homeowners.",
+        pageDescription: " is a website representing the company EasyKnock - A tech start-up offering an innovative sale-leasback program for homeowners.",
+        problems: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat.",
+        solutions: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat.",
+    },
+    stack: ['NextJS', 'Git','Material UI', 'Figma', 'Node.js', 'Segment', 'CSS/Sass', 'React Testing Library', 'Next Router', 'Styled Components'],
+    repo: "https://github.com/CaitHawk/",
+    link: "http://www.easyknock.com",
+    key: "101",
+    path: '/easyKnock'
+};
+
+const qualForm = {
+    information: {
+        title: "Qualification Form",
+        cardDescription: "EasyKnock's qualification form to  tech start-up offering an innovative sale-leasback program for homeowners.",
+        pageDescription: " is a website representing the company EasyKnock - A tech start-up offering an innovative sale-leasback program for homeowners.",
+        problems: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat.",
+        solutions: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero amet voluptatem explicabo aliquam! Eius cumque eligendi laborum perferendis, tenetur, error delectus consequuntur ea, accusantium eveniet nulla porro vitae fugiat.",
+    },
+    stack: ['React', 'TypeScript','Git','Material UI', 'Figma', 'Node.js', 'Segment', 'CSS/Sass', 'React Testing Library', 'React Router', 'Styled Components'],
+    repo: "https://github.com/CaitHawk/",
+    link: "http://www.secure.easyknock.com/getoffer",
+    key: "101",
+    path: '/easyKnockQualificationForm'
+};
+
+
 
 
 const jackOfAllFades = {
@@ -87,6 +118,8 @@ const javascriptCalculator = {
 }
 
 const projectsData = [
+    easyKnock,
+    qualForm,
     grafLaw,
     jackOfAllFades,
     portfolioSite,

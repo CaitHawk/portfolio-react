@@ -4,10 +4,11 @@
     background-color: #a2ad91;
 }
 
-.projectsTitleDiv {
+.projectsTitleUl {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    list-style: none;
     align-items: flex-start;
     position: sticky;
     top: 0;
@@ -19,11 +20,11 @@
     color: #e47545;
     font-size:35px;
 }
-.projectsTitleDiv p {
+.projectsTitleUl li {
     padding: 0 0 2vh 5vw;
     margin: 0;
 }
-.projectsAlternateP {
+.projectsAlternateLetter {
     color: #e1a647;
 }
 

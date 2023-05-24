@@ -6,31 +6,33 @@ import { faBalanceScale,
     faUser, 
     faMobileScreenButton, 
     faDice, 
-    faCalculator } from '@fortawesome/free-solid-svg-icons';
+    faCalculator, 
+    faHouse,
+    faCalendar} from '@fortawesome/free-solid-svg-icons';
 import { projectsData } from '../projectsData';
 import '../styles/Projects.css';
 
-const icons = [faBalanceScale, faScissors, faUser, faMobileScreenButton, faDice, faCalculator];
+const icons = [faHouse, faCalendar, faBalanceScale, faScissors, faUser, faMobileScreenButton, faDice, faCalculator,];
+const featuredArray = ['F', 'E', 'A', 'T', 'U', 'R', 'E', 'D'];
 
 
 function ProjectsSection() {
     return (
         <main className="projectsMain" id="projectsSection">
-            <div className="projectsTitleDiv">
-                <p>F</p>
-                <p className="projectsAlternateP">E</p>
-                <p>A</p>
-                <p className="projectsAlternateP">T</p>
-                <p>U</p>
-                <p className="projectsAlternateP">R</p>
-                <p>E</p>
-                <p className="projectsAlternateP">D</p>
-            </div>
+            <ul className="projectsTitleUl">
+                { featuredArray.map( (letter, idx) => (
+                    <li 
+                        className={ idx % 2 === 0 ? '' : 'projectsAlternateLetter'}
+                        key={`featuredArray${idx}`}>
+                            { letter }
+                    </li>
+                ))}
+            </ul>
             <ul className="projectsUl">
-                {projectsData.map((project) => (
+                {projectsData.map((project, idx) => (
                     <Link to={project.path}
                         key={uuidv4()}
-                        className={projectsData.indexOf(project) % 2 === 0 ?
+                        className={idx % 2 === 0 ?
                             "projectsLiLeft" :
                             "projectsLiRight"}>
                         <li className="projectsCard">
